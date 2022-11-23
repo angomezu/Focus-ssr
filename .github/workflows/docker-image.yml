@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag redis-latest:$(date +%s)
     - name: Docker Push
-      run: docker push angomezu/focus-ssr:latest
+      run: docker push angomezu/latest
