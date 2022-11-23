@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag redis:$(date +%s)
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/YOUR_DOCKER_HUB_REPO_NAME
+      run: docker push ${{secrets.DOCKER_USER}}/focus-ssr
